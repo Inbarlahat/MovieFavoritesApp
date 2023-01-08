@@ -1,0 +1,118 @@
+
+* {
+	background: #303030;
+	color: #ffffff;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Movie Posters Slide */
+.movie-app > .row {
+	overflow-x:auto;
+	flex-wrap: nowrap; 
+}
+
+
+/* Search box */
+#MovieName{
+  text-align: center;
+  justify-content: center;
+  object-position: center;
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color:rgb(255, 255, 255);
+  font-size: medium;
+  border: 1.5px solid rgba(255, 255, 255, 0.76);
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* IMDB */
+#header{
+  position: relative;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  src: local('MyFont'), url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap') format('woff');
+  color: rgba(255, 234, 0, 0.879);
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* Inbar and Liav... */
+#header2{
+  position: relative;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  src: local('MyFont'), url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap') format('woff');
+  color: rgba(255, 234, 0, 0.879);
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
+
+/* Favorites Title */
+#myFav{
+  position:relative;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  font-family: rockwell;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* Movie Posters */
+.image-container {
+  height: 400px;
+  width: 250px;
+  border: 8px solid #303030;
+  border-radius: 4px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  overflow: hidden;
+	transition: transform 250ms;
+  box-shadow: 0 0 0 1px rgb(241, 241, 241);
+}
+
+/* Movie Posters -> Cursor Hover */
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+  box-shadow: 0 0 2px 5px rgba(255, 255, 255, 0.719);
+}
+
+/* Movie Posters -> Cursor Hover -> Favorites */
+.image-container:hover .overlay {
+	opacity: 1;
+
+}
+
+/* Movie Posters -> Favorites Feature */
+.overlay {
+  font-family: 'Century Gothic',sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+	position: absolute;
+	background: rgba(#303030, 0.904);
+  width:100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0px;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
